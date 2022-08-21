@@ -56,6 +56,7 @@ function App() {
     }
   }
 
+  // Set our canvas size to the size of the viewport
   useEffect(() => {
     canvasRef.current.width = window.innerWidth;
     canvasRef.current.height = window.innerHeight;
@@ -76,12 +77,6 @@ function App() {
           onClick={handlePenSwitch}>
           <FaPen className="Features" id="PenFeature" />
         </div>
-        <div
-          className="FeatureContainer"
-          id="EraserContainer"
-          onClick={handleEraserSwitch}>
-          <FaEraser className="Features" id="EraserFeature" />
-        </div>
         <div id="InputLineSizeContainer" style={{ display: slider }}>
           <input
             type="range"
@@ -97,6 +92,12 @@ function App() {
           className="FeatureContainer"
           id="LineSize">
           <FaArrowsAltH className="Features" id="LineSizeFeature" />
+        </div>
+        <div
+          className="FeatureContainer"
+          id="EraserContainer"
+          onClick={handleEraserSwitch}>
+          <FaEraser className="Features" id="EraserFeature" />
         </div>
       </div>
     </>

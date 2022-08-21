@@ -39,22 +39,14 @@
 }
 
 #PenContainer {
-  position: absolute;
-  margin-right: 65%;
-  padding: 8px;
-  border-radius: 5px;
-  background-color: #0b0b0b;
-}
-
-#EraserContainer {
-  position: absolute;
-  margin-left: 65%;
   padding: 8px;
   border-radius: 5px;
   background-color: #0b0b0b;
 }
 
 #LineSizeFeature {
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 8px;
   border-radius: 5px;
   background-color: #0b0b0b;
@@ -82,4 +74,10 @@
 
 #LineSizeInput {
   height: 78px;
+}
+
+#EraserContainer {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #0b0b0b;
 }
